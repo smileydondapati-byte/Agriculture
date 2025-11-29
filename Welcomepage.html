@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rythu Bazaar Online - Fresh Organic Produce</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+<script src="https://cdn.tailwindcss.com/3.4.16"></script>
+<script>tailwind.config={theme:{extend:{colors:{primary:'#2E7D32',secondary:'#F9A825'},borderRadius:{'none':'0px','sm':'4px',DEFAULT:'8px','md':'12px','lg':'16px','xl':'20px','2xl':'24px','3xl':'32px','full':'9999px','button':'8px'}}}}</script>
+<style>
+:where([class^="ri-"])::before { content: "\f3c2"; }
+body {
+font-family: 'Open Sans', sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+font-family: 'Montserrat', sans-serif;
+}
+.logo-text {
+font-family: 'Pacifico', serif;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+-webkit-appearance: none;
+margin: 0;
+}
+.hero-section {
+background-image: linear-gradient(to right, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.7) 40%, transparent 70%), url('https://readdy.ai/api/search-image?query=A%20vibrant%20and%20colorful%20arrangement%20of%20fresh%20organic%20vegetables%20and%20fruits%20on%20a%20rustic%20wooden%20table%2C%20with%20bright%20natural%20lighting%2C%20showing%20a%20variety%20of%20produce%20including%20tomatoes%2C%20lettuce%2C%20carrots%2C%20apples%2C%20and%20berries.%20The%20image%20has%20a%20clean%2C%20bright%2C%20and%20natural%20aesthetic%2C%20perfect%20for%20an%20organic%20food%20marketplace.&width=1200&height=600&seq=hero1&orientation=landscape');
+background-size: cover;
+background-position: center right;
+}
+.card-hover:hover {
+transform: translateY(-5px);
+box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+  <button
+  type="submit"
+  class="bg-green-600 hover:bg-green-700 text-white font-semibold py-2 px-4 rounded shadow"
+>
+  Enter
+</button>
+    
+    
+</style>
+</head>
+<body class="bg-gray-50 min-h-screen">
+<!-- Navigation Bar -->
+<nav class="fixed top-0 left-0 right-0 bg-white shadow-md z-50">
+<div class="container mx-auto px-4 py-3 flex items-center justify-between">
+<div class="flex items-center space-x-2">
+<div class="w-10 h-10 flex items-center justify-center text-primary">
+<i class="ri-plant-line ri-2x"></i>
+</div>
+<a href="#" class="logo-text text-2xl text-primary font-bold">Rythu Bazaar Online</a>
+</div>
+<div class="flex items-center space-x-4">
+<div class="relative">
+<input type="text" placeholder="Search products..." class="w-64 pl-10 pr-4 py-2 rounded-button border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent text-sm">
+<div class="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 flex items-center justify-center text-gray-400">
+<i class="ri-search-line"></i>
+</div>
+</div>
+<button class="bg-primary text-white px-4 py-2 rounded-button hover:bg-primary/90 transition duration-300 whitespace-nowrap text-sm">
+Search
+</button>
+</div>
+</div>
+  <button
+  type="submit"
+  class="flex items-center gap-2 bg-green-600 hover:bg-green-700 text-white font-semibold py-2 px-4 rounded shadow"
+>
+  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none"
+       viewBox="0 0 24 24" stroke="currentColor">
+    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+          d="M5 12h14M12 5l7 7-7 7" />
+  </svg>
+  Enter
+</button>
+</nav>
+<!-- Main Content -->
+<main class="pt-20 pb-12">
+<!-- Hero Section -->
+<section class="hero-section min-h-[500px] w-full flex items-center mb-16">
+<div class="container mx-auto px-4 w-full">
+<div class="max-w-xl py-16">
+<h1 class="text-4xl md:text-5xl font-bold text-primary mb-4">From Farm to Table: Fresh, Organic & Healthy</h1>
+<p class="text-lg text-gray-700 mb-8">Connect directly with local farmers and access the freshest organic produce for your family's health and wellbeing.</p>
+<div class="flex flex-wrap gap-4">
+<button class="bg-primary text-white px-6 py-3 rounded-button hover:bg-primary/90 transition duration-300 whitespace-nowrap font-medium">
+Shop Now
+</button>
+<button class="bg-white text-primary px-6 py-3 rounded-button border-2 border-primary hover:bg-gray-50 transition duration-300 whitespace-nowrap font-medium">
+Learn More
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Action Cards Section -->
+<section class="mb-16">
+<div class="container mx-auto px-4">
+<div class="grid md:grid-cols-2 gap-8">
+<!-- Sell Now Card -->
+<div class="bg-white rounded-lg shadow-lg overflow-hidden transition-all duration-300 card-hover">
+<div class="h-60 overflow-hidden">
+<img src="https://readdy.ai/api/search-image?query=A%20farmer%20standing%20proudly%20in%20an%20organic%20farm%20field%2C%20holding%20fresh%20vegetables.%20The%20farmer%20is%20smiling%20and%20wearing%20casual%20work%20clothes.%20The%20background%20shows%20rows%20of%20well-maintained%20crops%20with%20a%20clear%20blue%20sky.%20The%20image%20has%20natural%20lighting%20and%20shows%20the%20connection%20between%20farmers%20and%20their%20produce.&width=600&height=400&seq=sell1&orientation=landscape" alt="Sell your produce" class="w-full h-full object-cover object-top">
+</div>
+<div class="p-6">
+<h2 class="text-2xl font-bold text-gray-800 mb-3">Sell Your Produce</h2>
+<p class="text-gray-600 mb-6">Connect directly with customers and get fair prices for your organic produce. Our platform makes selling simple and profitable.</p>
+<a href="sellnow.html" class="inline-block bg-primary text-white px-6 py-3 rounded-button hover:bg-primary/90 transition duration-300 whitespace-nowrap font-medium">
+  Sell Now
+</a>
+</div>
+</div>
+<!-- Shop Now Card -->
+<div class="bg-white rounded-lg shadow-lg overflow-hidden transition-all duration-300 card-hover">
+<div class="h-60 overflow-hidden">
+<img src="https://readdy.ai/api/search-image?query=A%20beautiful%20arrangement%20of%20fresh%20organic%20vegetables%20and%20fruits%20in%20wicker%20baskets%20at%20a%20farmers%20market.%20The%20produce%20includes%20colorful%20bell%20peppers%2C%20leafy%20greens%2C%20tomatoes%2C%20and%20various%20seasonal%20fruits.%20The%20image%20has%20warm%20natural%20lighting%20and%20shows%20the%20vibrant%20colors%20and%20freshness%20of%20organic%20produce%20available%20for%20customers%20to%20purchase.&width=600&height=400&seq=buy1&orientation=landscape" alt="Shop organic produce" class="w-full h-full object-cover object-top">
+</div>
+<div class="p-6">
+<h2 class="text-2xl font-bold text-gray-800 mb-3">Shop Organic Products</h2>
+<p class="text-gray-600 mb-6">Browse our selection of fresh, locally-grown organic produce. Support local farmers while enjoying the healthiest food for your family.</p>
+
+<a href="shopnow.html" class="inline-block bg-secondary text-white px-6 py-3 rounded-button hover:bg-secondary/90 transition duration-300 whitespace-nowrap font-medium">
+  Shop Now
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Organic Farming Information -->
+<section class="mb-16">
+<div class="container mx-auto px-4">
+<h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Why Choose Organic Farming?</h2>
+<!-- Advantages of Organic Farming -->
+<div class="flex flex-col md:flex-row items-center gap-8 mb-16">
+<div class="md:w-1/2">
+<img src="https://readdy.ai/api/search-image?query=A%20beautiful%20organic%20farm%20with%20rows%20of%20diverse%20crops%20growing%20in%20rich%20soil.%20The%20image%20shows%20sustainable%20farming%20practices%20with%20natural%20pest%20control%20methods%20visible.%20There%20are%20beneficial%20insects%2C%20companion%20planting%2C%20and%20natural%20barriers.%20The%20lighting%20is%20warm%20and%20golden%2C%20creating%20a%20serene%20and%20healthy%20atmosphere%20that%20emphasizes%20the%20natural%20beauty%20of%20organic%20farming%20methods.&width=600&height=400&seq=adv1&orientation=landscape" alt="Advantages of Organic Farming" class="w-full h-auto rounded-lg shadow-lg">
+</div>
+<div class="md:w-1/2">
+<h3 class="text-2xl font-bold text-primary mb-6">Advantages of Organic Farming</h3>
+<ul class="space-y-4">
+<li class="flex items-start">
+<div class="mt-1 mr-3 w-6 h-6 flex items-center justify-center text-primary">
+<i class="ri-check-line"></i>
+</div>
+<div>
+<h4 class="font-semibold text-gray-800">Soil Health Preservation</h4>
+<p class="text-gray-600">Organic farming practices maintain and improve soil fertility through natural methods like crop rotation and composting.</p>
+</div>
+</li>
+<li class="flex items-start">
+<div class="mt-1 mr-3 w-6 h-6 flex items-center justify-center text-primary">
+<i class="ri-check-line"></i>
+</div>
+<div>
+<h4 class="font-semibold text-gray-800">Biodiversity Support</h4>
+<p class="text-gray-600">Organic farms provide habitats for wildlife and promote diverse ecosystems that help maintain ecological balance.</p>
+</div>
+</li>
+<li class="flex items-start">
+<div class="mt-1 mr-3 w-6 h-6 flex items-center justify-center text-primary">
+<i class="ri-check-line"></i>
+</div>
+<div>
+<h4 class="font-semibold text-gray-800">Water Conservation</h4>
+<p class="text-gray-600">Organic farming practices help prevent water pollution and reduce water usage through improved soil structure.</p>
+</div>
+</li>
+<li class="flex items-start">
+<div class="mt-1 mr-3 w-6 h-6 flex items-center justify-center text-primary">
+<i class="ri-check-line"></i>
+</div>
+<div>
+<h4 class="font-semibold text-gray-800">Climate Change Mitigation</h4>
+<p class="text-gray-600">Organic farming practices sequester carbon in the soil, helping to reduce greenhouse gas emissions.</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<!-- Benefits of Organic Farming -->
+<div class="flex flex-col md:flex-row-reverse items-center gap-8">
+<div class="md:w-1/2">
+<img src="https://readdy.ai/api/search-image?query=A%20family%20enjoying%20a%20meal%20made%20with%20fresh%20organic%20produce%20at%20a%20dining%20table.%20The%20table%20is%20set%20with%20various%20colorful%20dishes%20made%20from%20organic%20vegetables%20and%20fruits.%20The%20family%20members%20are%20smiling%20and%20sharing%20the%20meal%20together.%20The%20scene%20conveys%20health%2C%20happiness%2C%20and%20the%20benefits%20of%20consuming%20organic%20food.%20Natural%20lighting%20illuminates%20the%20scene%2C%20highlighting%20the%20vibrant%20colors%20of%20the%20organic%20food.&width=600&height=400&seq=ben1&orientation=landscape" alt="Benefits of Organic Farming" class="w-full h-auto rounded-lg shadow-lg">
+</div>
+<div class="md:w-1/2">
+<h3 class="text-2xl font-bold text-secondary mb-6">Benefits of Organic Produce</h3>
+<ul class="space-y-4">
+<li class="flex items-start">
+<div class="mt-1 mr-3 w-6 h-6 flex items-center justify-center text-secondary">
+<i class="ri-heart-line"></i>
+</div>
+<div>
+<h4 class="font-semibold text-gray-800">Higher Nutritional Value</h4>
+<p class="text-gray-600">Studies show that organic produce often contains higher levels of antioxidants and essential nutrients.</p>
+</div>
+</li>
+<li class="flex items-start">
+<div class="mt-1 mr-3 w-6 h-6 flex items-center justify-center text-secondary">
+<i class="ri-shield-check-line"></i>
+</div>
+<div>
+<h4 class="font-semibold text-gray-800">No Harmful Pesticides</h4>
+<p class="text-gray-600">Organic farming prohibits the use of synthetic pesticides, reducing your exposure to potentially harmful chemicals.</p>
+</div>
+</li>
+<li class="flex items-start">
+<div class="mt-1 mr-3 w-6 h-6 flex items-center justify-center text-secondary">
+<i class="ri-leaf-line"></i>
+</div>
+<div>
+<h4 class="font-semibold text-gray-800">Better Taste</h4>
+<p class="text-gray-600">Many people find that organic produce has superior flavor and taste compared to conventionally grown alternatives.</p>
+</div>
+</li>
+<li class="flex items-start">
+<div class="mt-1 mr-3 w-6 h-6 flex items-center justify-center text-secondary">
+<i class="ri-community-line"></i>
+</div>
+<div>
+<h4 class="font-semibold text-gray-800">Supporting Local Communities</h4>
+<p class="text-gray-600">Buying organic often means supporting local farmers and strengthening local food systems and economies.</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-gray-800 text-white pt-12 pb-6">
+<div class="container mx-auto px-4">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+<!-- Quick Links -->
+<div>
+<h3 class="text-xl font-bold mb-4">Quick Links</h3>
+<ul class="space-y-2">
+<li><a href="#" class="text-gray-300 hover:text-white transition">Home</a></li>
+<li><a href="#" class="text-gray-300 hover:text-white transition">About Us</a></li>
+<li><a href="#" class="text-gray-300 hover:text-white transition">Shop Products</a></li>
+<li><a href="#" class="text-gray-300 hover:text-white transition">Sell Your Produce</a></li>
+<li><a href="#" class="text-gray-300 hover:text-white transition">Contact Us</a></li>
+</ul>
+<h3 class="text-xl font-bold mt-6 mb-4">Contact</h3>
+<ul class="space-y-2">
+<li class="flex items-start">
+<div class="mt-1 mr-3 w-5 h-5 flex items-center justify-center text-gray-300">
+<i class="ri-map-pin-line"></i>
+</div>
+<span class="text-gray-300">123 Organic Lane, Andhra Pradesh, India</span>
+</li>
+<li class="flex items-start">
+<div class="mt-1 mr-3 w-5 h-5 flex items-center justify-center text-gray-300">
+<i class="ri-phone-line"></i>
+</div>
+<span class="text-gray-300">+91 98765 xxxxx</span>
+</li>
+<li class="flex items-start">
+<div class="mt-1 mr-3 w-5 h-5 flex items-center justify-center text-gray-300">
+<i class="ri-mail-line"></i>
+</div>
+<span class="text-gray-300">info@rythubazaaronline.com</span>
+</li>
+</ul>
+</div>
+<!-- Newsletter -->
+<div>
+<h3 class="text-xl font-bold mb-4">Subscribe to Our Newsletter</h3>
+<p class="text-gray-300 mb-4">Stay updated with our latest products and farming tips.</p>
+<form class="space-y-4">
+<div>
+<input type="email" placeholder="Your email address" class="w-full px-4 py-2 rounded-button bg-gray-700 border border-gray-600 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent">
+</div>
+<button type="submit" class="bg-primary text-white px-6 py-2 rounded-button hover:bg-primary/90 transition duration-300 whitespace-nowrap">
+Subscribe
+</button>
+</form>
+</div>
+<!-- Social Media -->
+<div>
+<h3 class="text-xl font-bold mb-4">Follow Us</h3>
+<p class="text-gray-300 mb-4">Connect with us on social media for updates and special offers.</p>
+<div class="flex space-x-4">
+<a href="#" class="w-10 h-10 rounded-full bg-gray-700 flex items-center justify-center hover:bg-primary transition duration-300">
+<i class="ri-instagram-line ri-lg"></i>
+</a>
+<a href="#" class="w-10 h-10 rounded-full bg-gray-700 flex items-center justify-center hover:bg-primary transition duration-300">
+<i class="ri-twitter-x-line ri-lg"></i>
+</a>
+<a href="#" class="w-10 h-10 rounded-full bg-gray-700 flex items-center justify-center hover:bg-primary transition duration-300">
+<i class="ri-facebook-fill ri-lg"></i>
+</a>
+<a href="#" class="w-10 h-10 rounded-full bg-gray-700 flex items-center justify-center hover:bg-primary transition duration-300">
+<i class="ri-youtube-line ri-lg"></i>
+</a>
+</div>
+<h3 class="text-xl font-bold mt-6 mb-4">We Accept</h3>
+<div class="flex space-x-4">
+<div class="w-10 h-10 flex items-center justify-center text-gray-300">
+<i class="ri-visa-line ri-lg"></i>
+</div>
+<div class="w-10 h-10 flex items-center justify-center text-gray-300">
+<i class="ri-mastercard-line ri-lg"></i>
+</div>
+<div class="w-10 h-10 flex items-center justify-center text-gray-300">
+<i class="ri-paypal-line ri-lg"></i>
+</div>
+<div class="w-10 h-10 flex items-center justify-center text-gray-300">
+<i class="ri-amazon-pay-line ri-lg"></i>
+</div>
+</div>
+</div>
+</div>
+<div class="pt-8 border-t border-gray-700 text-center text-gray-400">
+<p>&copy; 2025 Rythu Bazaar Online. All rights reserved.</p>
+</div>
+</div>
+</footer>
+<script id="search-functionality">
+document.addEventListener('DOMContentLoaded', function() {
+const searchInput = document.querySelector('input[placeholder="Search products..."]');
+if (searchInput) {
+const searchButton = searchInput.nextElementSibling.nextElementSibling;
+if (searchButton) {
+function performSearch() {
+const searchTerm = searchInput.value.trim();
+if (searchTerm) {
+// In a real application, this would redirect to search results
+alert(`Searching for: ${searchTerm}`);
+// window.location.href = `/search?q=${encodeURIComponent(searchTerm)}`;
+}
+}
+searchButton.addEventListener('click', performSearch);
+searchInput.addEventListener('keypress', function(e) {
+if (e.key === 'Enter') {
+performSearch();
+}
+});
+}
+}
+});
+</script>
+<script id="newsletter-subscription">
+document.addEventListener('DOMContentLoaded', function() {
+const newsletterForm = document.querySelector('footer form');
+if (newsletterForm) {
+const emailInput = newsletterForm.querySelector('input[type="email"]');
+if (emailInput) {
+newsletterForm.addEventListener('submit', function(e) {
+e.preventDefault();
+const email = emailInput.value.trim();
+if (!email) {
+alert('Please enter your email address');
+return;
+}
+if (!isValidEmail(email)) {
+alert('Please enter a valid email address');
+return;
+}
+// In a real application, this would submit to a backend
+alert(`Thank you for subscribing with: ${email}`);
+emailInput.value = '';
+});
+}
+}
+function isValidEmail(email) {
+const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+return re.test(email);
+}
+});
+</script>
+</body>
+</html>
